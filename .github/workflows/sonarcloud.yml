@@ -25,7 +25,6 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v2
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          
-          sonar.projectKey: "sophiaboyko"
-          sonar.organization: "https://sonarcloud.io/organizations/sophiaboyko/projects"
+          sonar-token: ${{ secrets.SONAR_TOKEN }}
+          sonar-project-key: ${{ secrets.SONAR_PROJECT_KEY }}
+          sonar-organization: ${{ secrets.SONAR_ORG }}
